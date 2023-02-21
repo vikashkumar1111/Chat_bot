@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>WhatsApp Messaging Template</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+  </head>
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f5f5;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.chat-box {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.messages {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.message {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.message.received {
+  flex-direction: row;
+}
+
+.message.sent {
+  flex-direction: row-reverse;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100
+
+}
+
+.text {
+background-color: #f2f2f2;
+padding: 10px;
+border-radius: 10px;
+max-width: 70%;
+}
+
+.time {
+font-size: 12px;
+margin-left: 10px;
+color: #666;
+}
+
+.input-box {
+display: flex;
+align-items: center;
+padding: 10px;
+background-color: #f5f5f5;
+border-top: 1px solid #ccc;
+}
+
+.message-input {
+flex-grow: 1;
+height: 40px;
+padding: 10px;
+border: none;
+border-radius: 20px;
+outline: none;
+font-size: 16px;
+}
+
+.send-button {
+width: 40px;
+height: 40px;
+border: none;
+border-radius: 50%;
+background-color: #25D366;
+color: #fff;
+font-size: 18px;
+margin-left: 10px;
+cursor: pointer;
+}
+
+.send-button:hover {
+background-color: #128C7E;
+}
+
+</style>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/897px-WhatsApp.svg.png" alt="WhatsApp Logo">
+        <h1>WhatsApp Messaging Template</h1>
+      </div>
+      <div class="chat-box">
+        <div class="messages">
+          <div class="message received">
+            <div class="avatar"><img src="https://randomuser.me/api/portraits/women/24.jpg" alt="User Avatar"></div>
+            <div class="text">Hey! How are you doing?</div>
+            <div class="time">10:00 AM</div>
+          </div>
+          <div class="message sent">
+            <div class="avatar"><img src="https://randomuser.me/api/portraits/men/24.jpg" alt="User Avatar"></div>
+            <div class="text">I'm doing well, thanks for asking. How about you?</div>
+            <div class="time">10:05 AM</div>
+          </div>
+          <div class="message received">
+            <div class="avatar"><img src="https://randomuser.me/api/portraits/women/24.jpg" alt="User Avatar"></div>
+            <div class="text">I'm good too, thanks for asking.</div>
+            <div class="time">10:10 AM</div>
+          </div>
+        </div>
+        <div class="input-box">
+          <input type="text" class="message-input" placeholder="Type your message...">
+          <button class="send-button"><i class="fa fa-paper-plane"></i></button>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
