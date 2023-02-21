@@ -24,7 +24,8 @@ cd Chat_bot
 composer instal
 
 
-
+## Screenshot
+<p><img align="center" src="https://raw.githubusercontent.com/vikashkumar1111/Chat_bot/master/public/img/chatbot_img.png" alt="chatbot_img.png" /></p>
 
 ## Usage
 
