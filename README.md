@@ -12,16 +12,9 @@ And,you will need an OpenAI API key. You can sign up for an API key on the [Open
 
 ### Installation
 
-1. Clone the repository to your local machine.
+Clone the repository to your local machine.
 
 git clone https://github.com/vikashkumar1111/Chat_bot.git
-
-
-2. Install dependencies using Composer.
-
-cd Chat_bot
-
-composer instal
 
 
 ## Screenshot
